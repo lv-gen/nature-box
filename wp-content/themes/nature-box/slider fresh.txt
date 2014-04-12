@@ -1,0 +1,67 @@
+<!-- Слайдер Свежее -->
+<div id="content">
+    <?php if ( !dynamic_sidebar('homepage-widget-area') ); ?>
+   
+</div><!-- #content -->
+
+<div class="span4 margin-b">
+<div class="fresh-slider">
+<div class="fs-title"><i class="icon-eye-open icon-white"></i> В центре внимания
+<span class="pull-right">
+<button id="slider-pult-prev" class="fs-slider-btn-mini-prev"></button>
+<button id="slider-pult-next" class="fs-slider-btn-mini-next"></button>
+</span>
+</div>
+<!-- Slide -->
+
+
+<!-- Вкладки -->
+
+<div class="tabbable tabs-below">
+<div class="tab-content" id="tab-content">
+
+<?php if ( have_posts() ) ?>
+
+			<?php /* Start the Loop */ ?>
+			<?php query_posts('cat=8'); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'content1', get_post_format() ); ?>
+			<?php endwhile; ?>
+
+<?php>wp_reset_query();?>
+
+</div>
+
+
+<div class="btn-group pull-right" id="slider-pult" data-toggle="buttons-radio">
+<a href="#S_1" data-toggle="tab" class="btn btn-mini btn-warning active">1</a>
+<a href="#S_2" data-toggle="tab" class="btn btn-mini btn-warning">2</a>
+<a href="#S_3" data-toggle="tab" class="btn btn-mini btn-warning">3</a>
+</div>
+
+</div>  
+
+
+<!-- Вкладки -->
+
+<!-- End Slide -->
+
+</div>
+</div>
+<div class="span3">
+<ul class="block-category-list">
+<?php if ( have_posts() ) ?>
+
+			<?php /* Start the Loop */ ?>
+			<?php query_posts('cat=8'); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'content2', get_post_format() ); ?>
+			<?php endwhile; ?>
+
+<?php>wp_reset_query();?>
+
+</ul>
+</div>
+
+</div>
+<!-- Конец Слайдер Свежее -->

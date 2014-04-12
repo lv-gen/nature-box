@@ -1,0 +1,64 @@
+<!-- Вывод постов из категорий -->
+
+<div class="span9">
+	<div class="for-block">
+	<div class="block-category">
+<div class="block-title">Последние записи</div>
+
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab">Вкладка 1</a></li>
+<li class=""><a href="#tab2" data-toggle="tab">Вкладка 2</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="tab1">
+<!-- Секция -->
+<div class="row">
+
+<div class="span4">
+<img src="http://nature-box.ru/wp-content/uploads/2012/12/lug-300x180.jpg">
+</div>
+<div class="span3">
+<div class="block-category-title-posts">
+
+<ul class="block-category-list">
+<li>
+<p class="block-category-list-meta">sdfgsd dsfsdf sdfsdf sdfsdfsd</p>
+<p class="block-category-list-item"><a href="/">Гуси</a></p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<!-- Конец Секции -->
+</div>
+<div class="tab-pane" id="tab2">
+<!-- Секция -->
+<div class="row">
+
+<div class="span4">
+<img src="http://nature-box.ru/wp-content/uploads/2012/12/lug-300x180.jpg">
+</div>
+<div class="span3">
+<div class="block-category-title-posts">
+
+<ul class="block-category-list">
+<li>
+<p class="block-category-list-meta">sdfgsd dsfsdf sdfsdf sdfsdfsd</p>
+<p class="block-category-list-item"><a href="/">Гусивввв</a></p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<!-- Конец Секции -->
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- Конец Вывод постов из категорий -->
